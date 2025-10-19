@@ -7,6 +7,7 @@ export default function BeatsSection() {
   const [dots, setDots] = useState<
     { x: number; y: number; delay: number; duration: number }[]
   >([]);
+  console.log(dots);
 
   useEffect(() => {
     const createDots = () => {

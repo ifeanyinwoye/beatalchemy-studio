@@ -6,6 +6,7 @@ export default function Hero() {
   const [dots, setDots] = useState<
     { x: number; y: number; delay: number; duration: number }[]
   >([]);
+  console.log(dots);
 
   useEffect(() => {
     const createDots = () => {
