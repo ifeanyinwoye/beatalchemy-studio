@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Play } from "lucide-react";
 
 export default function BeatsSection() {
   const [dots, setDots] = useState<
