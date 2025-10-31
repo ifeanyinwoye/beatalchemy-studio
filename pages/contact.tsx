@@ -161,6 +161,14 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 
+declare global {
+  interface Window {
+    toast?: {
+      success: (msg: string) => void;
+    };
+  }
+}
+
 export default function Contact() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
