@@ -57,7 +57,10 @@ export default function Contact() {
             onSubmit={(e) => {
               e.preventDefault();
               if (typeof window !== "undefined") {
-                const toast = (window as any).toast;
+                // Specify toast type: it's a function that takes a string and returns void
+                const toast: { success: (msg: string) => void } | undefined = (
+                  window as any
+                ).toast;
                 if (toast) toast.success("Message sent successfully!");
               }
             }}
