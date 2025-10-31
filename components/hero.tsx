@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Hero() {
   const [dots, setDots] = useState<
@@ -26,17 +27,6 @@ export default function Hero() {
 
   return (
     <section className="relative w-full h-screen bg-[#0a0018] overflow-hidden flex items-center justify-center">
-      {/* Optional Background Video */}
-      {/* <video
-        src="/studio.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-30"
-      /> */}
-
-      {/* Gradient Overlay */}
       <div
         className="absolute inset-0 bg-gradient-to-r from-[#0a0018] via-[#1a0033] to-[#00081a]
  z-0"
@@ -49,7 +39,7 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
         className="relative z-10 text-center px-6 max-w-3xl"
       >
-        <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-[0_0_15px_rgba(125,0,255,0.6)]">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-[0_0_15px_rgba(125,0,255,0.6)]">
           Where{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7d00ff] to-[#00e1ff]">
             Creativity
@@ -66,13 +56,13 @@ export default function Hero() {
             whileHover={{ scale: 1.05 }}
             className="px-6 py-3 rounded-full bg-gradient-to-r from-[#3a0a73] to-[#00445c] text-white font-semibold shadow-[0_0_8px_rgba(0,0,0,0.3)] hover:shadow-[0_0_12px_rgba(0,225,255,0.15)] transition-all duration-300"
           >
-            Explore Beats
+            <Link href="beats">Explore Beats</Link>
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.05 }}
             className="px-6 py-3 rounded-full border border-white/20 text-white font-semibold hover:bg-white/10 transition-all"
           >
-            Book Session
+            <Link href="booking">Book Session</Link>
           </motion.button>
         </div>
       </motion.div>

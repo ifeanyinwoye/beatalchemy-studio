@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function CTASection() {
   return (
@@ -35,7 +36,7 @@ export default function CTASection() {
           whileTap={{ scale: 0.97 }}
           className="mt-8 px-10 py-4 rounded-full bg-gradient-to-r from-[#3a0a73] to-[#00445c] text-white/90 font-semibold text-lg border border-white/10 hover:border-white/20 hover:bg-gradient-to-r hover:from-[#4a118a] hover:to-[#006b89] transition-all duration-300"
         >
-          Book a Session
+          <Link href="/booking">Book a Session</Link>
         </motion.button>
       </motion.div>
     </section>
