@@ -49,6 +49,7 @@ export default function Beats() {
   // ✅ States
   const [search, setSearch] = useState("");
   const [currentBeat, setCurrentBeat] = useState<Beat | null>(null);
+  console.log(setSearch, "setSearch");
 
   // ✅ Filter logic (after beats declaration)
   const filteredBeats = beats.filter(

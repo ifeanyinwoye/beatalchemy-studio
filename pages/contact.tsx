@@ -56,8 +56,10 @@ export default function Contact() {
           <form
             onSubmit={(e) => {
               e.preventDefault();
-              const toast = (window as any).toast;
-              if (toast) toast.success("Message sent successfully!");
+              if (typeof window !== "undefined") {
+                const toast = (window as any).toast;
+                if (toast) toast.success("Message sent successfully!");
+              }
             }}
             className="bg-gradient-to-b from-[#120027] to-[#0b0019] border border-white/10 rounded-2xl p-8 shadow-xl space-y-6"
           >

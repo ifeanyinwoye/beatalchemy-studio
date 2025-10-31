@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -223,7 +224,7 @@ export default function About() {
             ?
           </h2>
           <p className="text-gray-300 text-lg mb-10 leading-relaxed">
-            Whether you're an artist, producer, or sound enthusiast — Beat
+            Whether you’re an artist, producer, or sound enthusiast — Beat
             Alchemy Studio is your home for creativity and professional sound.
             Let’s make your next track unforgettable.
           </p>
@@ -241,9 +242,9 @@ export default function About() {
           {/* Small Note */}
           <p className="text-gray-500 text-sm mt-6">
             Have questions?{" "}
-            <a href="/contact" className="text-[#00e1ff] hover:underline">
+            <Link href="/contact" className="text-[#00e1ff] hover:underline">
               Contact us
-            </a>{" "}
+            </Link>{" "}
             — we’d love to help.
           </p>
         </motion.div>
