@@ -72,12 +72,8 @@ export default function BeatsSection() {
             <motion.div
               initial={{ opacity: 0 }}
               whileHover={{ opacity: 1 }}
-              className="absolute inset-0 flex items-center justify-center bg-black/40 transition-all duration-300"
-            >
-              <div className="p-4 rounded-full bg-gradient-to-r from-[#7d00ff] to-[#00e1ff] shadow-lg">
-                <Play className="w-6 h-6 text-white" />
-              </div>
-            </motion.div>
+              className="absolute inset-0 flex items-center justify-center bg-black/10 transition-all duration-300"
+            ></motion.div>
           </motion.div>
         ))}
       </div>

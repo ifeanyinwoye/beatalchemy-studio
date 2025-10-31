@@ -20,11 +20,14 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-[#0a0018] via-[#1a0033] to-[#00081a] backdrop-blur-lg border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <img
-          src="/logo1.png"
-          alt="BA Studio Logo"
-          className="h-10 w-auto md:h-12 object-contain drop-shadow-[0_0_12px_rgba(125,0,255,0.5)] rounded-full"
-        />
+        <Link href="/">
+          {" "}
+          <img
+            src="/logo1.png"
+            alt="BA Studio Logo"
+            className="h-10 w-auto md:h-12 object-contain drop-shadow-[0_0_12px_rgba(125,0,255,0.5)] rounded-full"
+          />
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
